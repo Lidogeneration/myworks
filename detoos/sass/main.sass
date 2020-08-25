@@ -1,0 +1,1083 @@
+$main_color: #2D2D2D
+$main_white: #fff
+$main_rgb: #44DBBD
+
+
+*
+	box-sizing: border-box	
+body
+	background: $main_white
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal
+	font-size: 16px
+	color: $main_color
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	a
+		text-decoration: none
+		color: $main_color
+		&:hover
+			text-decoration: none
+			color: $main_color
+button
+	outline: none
+	&:focus
+		outline: none
+.hidden
+	display: none
+
+section
+	padding: 50px 0
+	overflow: hidden
+
+.done
+	min-height: 100vh
+
+
+/* --- menuBtn Start ------------------------------------------------*/
+.menuBtn
+	position: fixed
+	top: 20px
+	right: 20px
+	width: 30px
+	height: 29px
+	z-index: 55
+	display: none
+	justify-content: space-around
+	align-items: center
+	flex-direction: column
+	background: $main_color
+	border-radius: 2px
+	span
+		transition: .3s
+		transform: rotate(0) translate(0)
+.menuBtnHide
+	span
+		transition: .3s
+		transform: rotate(0) translate(0)
+		display: block
+		width: 80%
+		height: 3px
+		background: $main_white
+.menuBtnShow
+	background: none
+	span
+		transition: .3s
+		display: block
+		width: 100%
+		height: 3px
+		background: $main_color
+		&:nth-child(1)
+			transform: rotate(45deg)
+		&:nth-child(2)
+			display: none
+		&:nth-child(3)
+			transform: rotate(-45deg) translate(10px, -10px)
+/* --- menuBtn end ------------------------------------------------*/
+
+/* --- Navbar START ------------------------------------------------*/
+.navMobile
+	background: $main_white
+	padding: 20px 0 0 0
+	min-height: 100vh
+	position: fixed
+	width: 280px
+	right: 0
+	z-index: 50
+	transition: .3s
+	display: flex
+	flex-direction: column
+	overflow: hidden
+	box-shadow: -6px 0px 5px rgba(0, 0, 0, 0.1)
+	&__title
+		padding: 0 30px
+		margin-top: 20px
+		text-align: center
+		margin-bottom: 20px
+		h4
+			margin: 0
+			font-weight: bold
+			font-size: 32px
+			margin-bottom: 20px
+			span
+				color: $main_rgb
+		h5
+			text-align: left
+			font-size: 20px
+			font-weight: bold
+	hr
+		width: 100%
+		height: 1px
+	&__list
+		margin: 0 0 auto 0
+		padding: 0 30px
+		list-style: none
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				margin-bottom: 10px
+				a
+					color: $main_color
+					font-size: 16px
+					text-transform: uppercase
+					font-weight: bold
+					position: relative
+					padding-bottom: 10px
+					&:after
+						transition: .3s
+						position: absolute
+						content: ''
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						border-bottom: 2px solid $main_rgb
+						transform: translateY(50%)
+						opacity: 0
+					&:hover
+						&:after
+							transition: .3s
+							transform: translateY(0)
+							opacity: 1
+				.active
+					&:after
+						transition: .3s
+						transform: translateY(0)
+						opacity: 1
+		&-social
+			width: 100%
+			display: flex
+			justify-content: flex-start
+			margin-bottom: 20px
+			a
+				font-size: 30px
+				svg
+					color: $main_rgb
+		&-delivery
+			h5
+				font-size: 14px
+	&__contacts
+		padding: 20px 30px
+		display: flex
+		flex-direction: column
+		background: $main_rgb
+		p, a
+			font-size: 16px
+			color: $main_white
+			i
+				color: $main_rgb
+		a
+			transition: .3s
+			text-transform: uppercase
+			&:hover
+				transition: .3s
+				color: $main_color
+.navMobileShow
+	transition: .3s
+	transform: translateY(0) !important
+.navMobileHide
+	transition: .3s
+	transform: translateY(-200%) !important
+/* --- Navbar END ------------------------------------------------*/
+
+
+/* --- firstScroll Start ------------------------------------------------*/
+.firstScroll	
+	display: flex
+	justify-content: center
+	min-height: 100vh
+	padding: 0
+	z-index: 1
+	&__left
+		flex-basis: 70%
+		background: $main_color
+		position: relative
+		z-index: 3
+		&-bgLogo
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			width: 100vw
+			img
+				width: 100%
+		&-wrap
+			min-height: 100vh
+			padding-left: 100px
+			padding-right: 200px
+			padding-top: 30px
+			padding-bottom: 20px
+			display: flex
+			flex-direction: column
+			position: relative
+			&-imgD
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+				right: -180px
+				height: 85vh
+				img
+					max-width: 100%
+					height: auto
+					max-height: 100%
+			&-imgMobile
+				display: none					
+			&-nav
+				&-header
+					display: flex
+					justify-content: space-between
+					margin-bottom: 30px
+					&-logo
+						img
+							max-width: 100%
+							height: auto
+					&-phone
+						a
+							display: block
+							color: $main_white
+							transition: .3s
+							&:hover
+								color: $main_rgb
+							&:nth-child(1)
+								font-weight: bold
+								font-size: 20px
+							&:nth-child(2)
+								text-align: right
+								font-weight: normal
+								font-size: 14px
+								border-bottom: 1px solid rgba(255, 255, 255, 0.28)
+								padding-bottom: 10px
+				&-line
+					width: 100%
+					height: 1px
+					background: $main_rgb
+					margin-bottom: 20px
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						width: 100%
+						height: 1px
+						background: $main_rgb
+						top: 0
+						left: -100%
+				&-list
+					margin-bottom: 20px
+					ul
+						padding: 0
+						margin: 0
+						width: 100%	
+						display: flex
+						justify-content: space-between
+						li
+							a
+								font-size: 16px
+								color: $main_white
+								transition: .3s
+								&:hover
+									color: $main_rgb
+			&-title
+				margin-top: auto
+				margin-bottom: auto
+				&-header
+					margin-bottom: 30px
+					h2
+						font-size: 30px
+						font-weight: 900
+						color: $main_white
+					h1
+						font-size: 76px
+						color: $main_white
+						font-weight: 800
+					h3
+						font-size: 22px
+						color: $main_white
+				&-btn
+					display: flex
+					justify-content: flex-start
+					&-wrap
+						display: flex
+						justify-content: center
+						align-items: center
+					&-txt
+						p
+							margin: 0
+							padding: 0 10px
+							color: $main_white
+							line-height: 20px
+				&-line
+					margin-top: 50px
+					margin-bottom: 50px	
+					width: 100%
+					height: 1px
+					background: #C4C4C4
+				&-delivery
+					display: flex
+					justify-content: flex-start
+					h5
+						color: $main_white
+						margin: 0
+						font-size: 22px
+						font-weight: bold
+						img
+							max-width: 100%
+							height: auto
+							margin-right: 10px
+						&:nth-child(1)
+							margin-right: 20px
+			@media(max-width: 1200px)
+				padding-left: 50px
+				padding-right: 100px
+				&-imgD
+					height: 70vh
+	&__right
+		z-index: -1
+		flex-basis: 30%
+		background: linear-gradient(rgba($main_white, .6) 100%, rgba($main_white, .6) 100%), url('../img/frightBg.png')
+		background-position: top right
+		background-repeat: no-repeat
+		background-size: auto 100%
+	@media(max-width: 992px)
+		flex-wrap: wrap
+		&__left
+			flex-basis: 100%
+			&-bgLogo
+				top: 35%
+			&-wrap
+				padding-top: 5px
+				padding-left: 0
+				padding-right: 0
+				&-imgD
+					z-index: 99
+					right: 20px
+					top: 40%
+					height: 50vh
+				&-imgMobile
+					margin-top: auto
+					display: inherit
+					img
+						width: 100%
+						max-width: 100%
+						height: auto
+				&-nav
+					padding: 10px
+					&-header
+						margin-bottom: 10px
+						&-phone
+							display: none
+					&-list
+						display: none
+					&-line
+						display: none
+				&-title
+					padding: 10px
+					margin-bottom: 0
+					&-header
+						margin-bottom: 5px
+						h2
+							font-size: 20px
+						h1
+							font-size: 48px
+						h3
+							font-size: 16px
+					&-btn
+						flex-direction: column-reverse
+						&-txt
+							margin-bottom: 10px
+							p
+								padding: 0
+					&-delivery
+						display: none
+					&-line
+						display: none
+		&__right
+			flex-basis: 100%
+	@media(max-height: 690px) and (max-width: 992px)
+		&__left
+			&-wrap
+				&-imgD
+					height: 45vh
+	@media(max-width: 375px)
+		&__left
+			&-wrap
+				&-imgD
+					height: 40vh
+	@media(max-width: 350px)
+		&__left
+			&-wrap
+				&-imgD
+					height: 35vh
+					top: 30%
+/* --- firstScroll end ------------------------------------------------*/
+
+/* --- about Start ------------------------------------------------*/
+.about
+	padding: 0 100px
+	&__imgWrap
+		padding-top: 70px
+		padding-bottom: 20px
+		position: relative
+		background: $main_rgb
+		height: 100%
+		&:after
+			content: ''
+			position: absolute
+			top: 30%
+			left: -100%
+			width: 100%	
+			height: 100%
+			background: $main_rgb
+		&-line
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			height: 30%
+			background: $main_white
+		&-img
+			position: relative
+			width: 95%
+			img
+				width: 100%
+				height: auto
+			a
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 70px
+				color: $main_white
+	&__txt
+		padding: 70px 10px 0 40px
+		background: $main_color
+		height: 100%
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -100%
+			width: 100%
+			height: 100%
+			background: $main_color
+		h3
+			color: $main_white
+			font-size: 42px	
+			font-weight: bold
+			span
+				color: $main_rgb
+		hr
+			margin: 30px auto
+			height: 1px
+			width: 100%	
+			background: $main_rgb	
+		p
+			color: $main_white
+			margin: 0
+			&:nth-child(odd)
+				margin-bottom: 10px
+	@media(max-width: 1400px)
+		padding: 0 50px
+		&__txt
+			h3
+				font-size: 30px
+			hr
+				margin: 10px auto
+	@media(max-width: 1200px)
+		&__txt
+			padding: 40px 10px 10px 20px
+			h3
+				font-size: 26px
+			p
+				font-size: 14px
+		&__imgWrap
+			padding-top: 40px
+	@media(max-width: 992px)
+		padding: 0
+/* --- about end ------------------------------------------------*/
+
+/* --- revolution Start ------------------------------------------------*/
+.revolution
+	padding: 50px 100px
+	&__desc
+		margin-bottom: 30px
+		h2
+			font-size: 44px
+			font-weight: bold
+		&-line
+			margin-top: 30px
+			margin-bottom: 30px
+			width: 100%
+			height: 1px
+			background: $main_rgb
+		p
+			font-size: 18px
+			font-weight: 300
+			margin: 0
+			padding: 0
+			&:nth-child(odd)
+				margin-bottom: 10px
+	&__btn
+		display: flex
+		&-wrap
+			margin: 5px
+			display: flex
+			justify-content: center
+			align-items: center
+		&-txt
+			margin: 5px
+			p
+				padding: 0
+				margin: 0
+				span
+					text-transform: uppercase
+					color: $main_rgb
+	&__slider
+		.slick-prev
+			bottom: -8px
+			left: 30%
+			top: inherit
+			z-index: 99
+			transition: .3s
+			svg
+				color: $main_color
+				font-size: 30px
+				transition: .3s
+			&:hover
+				svg
+					color: $main_rgb
+		.slick-next
+			bottom: -8px
+			right: 30%
+			top: inherit
+			z-index: 99
+			transition: .3s
+			svg
+				color: $main_color
+				font-size: 30px
+				transition: .3s
+			&:hover
+				svg
+					color: $main_rgb
+		.slick-dots
+			li
+				button
+					&:before
+						font-size: 15px
+			.slick-active	
+				button
+					&:before
+						color: $main_rgb !important
+		&-wrap
+			img
+				display: block
+				margin-left: auto
+				margin-right: auto
+				max-width: 100%
+	@media(max-width: 1400px)
+		padding: 50px
+	@media(max-width: 1200px)
+		&__btn
+			&-wrap
+				.mainBtn
+					width: 200px
+	@media(max-width: 992px)
+		padding: 30px 0
+		.slick-next
+			right: 10%
+		.slick-prev
+			left: 10%
+		&__desc
+			margin-bottom: 15px
+			h2
+				font-size: 26px
+			&-line
+				margin: 15px auto
+		&__btn
+			flex-direction: column-reverse
+			text-align: center
+/* --- revolution end ------------------------------------------------*/
+
+/* --- adv Start ------------------------------------------------*/
+.adv
+	padding: 50px 100px
+	&__line
+		margin: 30px 0
+		height: 1px
+		width: 50%
+		background: $main_rgb
+		position: relative
+		&:after
+			width: 100%
+			height: 1px
+			content: ''
+			position: absolute
+			top: 0
+			left: -100%
+			background: $main_rgb
+	&__header
+		h2
+			font-size: 44px
+			font-weight: bold
+		h3
+			font-size: 16px
+	&__old
+		.adv__wrap-cont
+			background: #000
+	&__new
+		.adv__wrap-cont
+			background: $main_rgb
+	&__wrap
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		height: 100%
+		&-cont
+			height: 100%
+			padding: 10px 100px
+			box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.08)
+			&-img
+				max-width: 100%
+				height: auto
+				display: block
+				margin-left: auto
+				margin-right: auto
+				img
+					max-width: 100%
+					height: auto
+			&-txt
+				text-align: center
+				p
+					margin: 0
+					padding: 0
+					color: $main_white
+	&__dCont
+		height: 100%
+		box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.08)
+		&-img
+			img
+				width: 100%
+				max-width: 100%
+				height: auto
+		&-txt
+			padding: 10px
+	@media(max-width: 1400px)
+		padding: 0 50px
+	@media(max-width: 992px)
+		padding: 0
+		&__header
+			padding: 10px	
+			h2
+				font-size: 26px
+	@media(max-width: 740px)
+		&__wrap
+			&-cont
+				padding: 10px 50px
+	@media(max-width: 540px)
+		&__wrap
+			&-cont
+				padding: 10px 10px
+/* --- adv end ------------------------------------------------*/
+
+/* --- partner Start ------------------------------------------------*/
+.partner
+	padding: 0
+	display: flex
+	&__desc
+		padding: 10px 100px
+		flex-basis: 50%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		background: $main_color
+		&-title
+			h2
+				color: $main_white
+				font-size: 44px
+				font-weight: bold
+				margin-bottom: 30px
+			p
+				color: $main_white
+		&-line
+			margin: 30px 0
+			width: 100%
+			height: 1px
+			background: $main_rgb
+			position: relative
+			&:after
+				position: absolute
+				content: ''
+				top: 0
+				width: 100%
+				height: 1px
+				background: $main_rgb
+				left: -100%
+		&-btn
+			display: flex
+			&-wrap
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 5px
+			&-txt
+				margin: 5px
+				p
+					color: $main_white
+					padding: 0
+					margin: 0
+	&__img
+		flex-basis: 50%
+		img
+			width: 100%
+	@media(max-width: 1400px)
+		&__desc
+			padding: 10px 50px
+			&-title
+				h2
+					font-size: 36px
+					margin-bottom: 10px
+			&-line
+				margin: 10px 0
+			&-btn
+				&-wrap
+					.mainBtn
+						width: 200px
+	@media(max-width: 992px)
+		flex-direction: column
+		&__desc
+			padding: 10px
+			&-title
+				h2
+					font-size: 26px
+			&-btn
+				flex-direction: column-reverse
+/* --- partner end ------------------------------------------------*/
+
+/* --- rev Start ------------------------------------------------*/
+.rev
+	padding: 50px 0 50px 100px
+	position: relative
+	&__bg
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 60%
+		height: 40%
+		background: $main_rgb
+		z-index: -1
+	&__title
+		h2
+			font-size: 44px
+			font-weight: bold
+	&__line
+		margin: 30px 0
+		width: 50%
+		height: 1px	
+		background: $main_rgb
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			background: $main_rgb
+			top: 0
+			left: -100%
+	&__slider
+		.slick-prev
+			bottom: 25px
+			left: inherit
+			right: 28%
+			top: inherit
+			z-index: 99
+			transition: .3s
+			&:before
+				content: ''
+			svg
+				color: $main_rgb
+				font-size: 30px
+				transition: .3s
+		.slick-next
+			bottom: 25px
+			right: 10%
+			top: inherit
+			z-index: 99
+			transition: .3s
+			&:before
+				content: ''
+			svg
+				color: $main_rgb
+				font-size: 30px
+				transition: .3s
+		.slick-dots
+			bottom: 28px
+			display: block
+			width: inherit
+			right: 16%
+			li
+				button
+					&:before
+						color: $main_rgb
+						font-size: 15px
+			.slick-active	
+				button
+					&:before
+						color: $main_rgb !important
+		&-cont
+			display: flex !important
+			&-img
+				position: relative
+				flex-basis: 50%
+				&-wrap
+					background: $main_color
+					img
+						width: 100%
+						max-width: 100%
+						height: auto
+				&-placeholder
+					padding: 10px
+					position: absolute
+					top: 0
+					left: 0
+					width: 25%
+					height: 100%
+					background: rgba($main_color, .8)
+					display: flex
+					justify-content: flex-end
+					flex-direction: column
+					h4
+						color: $main_white
+					p
+						color: $main_rgb
+				a
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					font-size: 50px
+					color: $main_white
+			&-desc
+				background: $main_color
+				padding: 30px 0
+				flex-basis: 50%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				&-title
+					background: rgba($main_white, .3)
+					display: flex
+					align-items: center
+					padding: 0 30px
+					margin-bottom: 20px
+					&-img
+						margin: 5px
+						img
+							border-radius: 50%
+					&-header
+						margin: 5px
+						padding: 10px
+						h3
+							color: $main_white
+						p
+							padding: 0
+							margin: 0
+							color: $main_rgb
+				&-txt
+					padding: 0 30px
+					p
+						font-size: 14px
+						color: $main_white	
+						margin: 0
+	@media(max-width: 1270px)
+		padding: 50px 0 50px 50px
+		&__slider
+			&-cont
+				&-desc
+					&-title
+						padding: 0 10px	
+						margin-bottom: 10px
+					&-txt
+						padding: 0 10px
+	@media(max-width: 992px)
+		padding: 10px
+		&__title
+			h2
+				font-size: 24px
+		&__slider
+			.slick-prev
+				bottom: -30px
+				left: 10%
+				right: inherit
+				top: inherit
+				z-index: 99
+				transition: .3s
+				&:before
+					content: ''
+				svg
+					color: $main_color
+					font-size: 30px
+					transition: .3s
+			.slick-next
+				bottom: -28px
+				right: 10%
+				top: inherit
+				z-index: 99
+				transition: .3s
+				&:before
+					content: ''
+				svg
+					color: $main_color
+					font-size: 30px
+					transition: .3s
+			.slick-dots
+				bottom: -28px
+				display: block
+				width: 100%
+				right: inherit
+				li
+					button
+						&:before
+							color: $main_color
+							font-size: 15px
+				.slick-active	
+					button
+						&:before
+							color: $main_color !important
+			&-cont
+				flex-direction: column
+				&-img
+					&-placeholder
+						display: none
+/* --- rev end ------------------------------------------------*/
+
+/* --- contacts Start ------------------------------------------------*/
+.contacts
+	padding: 50px 100px
+	background: $main_color
+	display: flex
+	&__desc
+		flex-basis: 40%
+		&-txt
+			h2
+				color: $main_white
+				margin-bottom: 20px
+			a
+				color: $main_white
+				display: block
+				transition: .3s
+				margin-bottom: 10px
+				svg
+					margin-right: 10px
+				&:hover
+					color: $main_rgb
+			&-social
+				margin-top: 20px
+				margin-bottom: 20px
+				a
+					display: inline
+					font-size: 30px
+		&-btn
+			h3
+				font-size: 22px
+				color: $main_white
+	&__map
+		flex-basis: 60%
+		iframe
+			width: 100%
+			height: 100%
+	@media(max-width: 1400px)
+		padding: 50px	
+	@media(max-width: 992px)
+		padding: 10px
+		flex-direction: column
+		&__desc
+			margin-bottom: 20px
+/* --- contacts end ------------------------------------------------*/
+
+/* --- formSection Start ------------------------------------------------*/
+.formSection
+	padding:  50px 100px
+	background: #000
+	@media(max-width: 1400px)
+		padding: 50px
+	@media(max-width: 992px)
+		padding: 10px
+		.openFormVer
+			text-align: center
+			h3
+				font-size: 22px
+			input, button
+				flex-basis: 100%
+				margin-bottom: 10px
+/* --- formSection end ------------------------------------------------*/
+
+/* --- button start Start ------------------------------------------------*/
+.mainBtn
+	cursor: pointer
+	display: block
+	width: 270px
+	max-width: 100%
+	padding: 10px
+	font-size: 18px
+	color: $main_white
+	font-weight: bold
+	background: $main_rgb
+	text-align: center
+	border-radius: 3px
+	transition: .3s
+	border: none
+	&:hover
+		background: $main_white
+		color: $main_rgb
+/* --- button start end ------------------------------------------------*/	
+
+/* --- forms Start ------------------------------------------------*/
+.openFormVer
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	h3
+		flex-basis: 100%
+		margin-bottom: 20px
+		color: $main_white
+		font-size: 28px
+		span
+			color: $main_rgb
+			text-transform: uppercase
+	input
+		flex-basis: 32%
+		margin: 5px
+		padding: 10px
+		border: none
+	button
+		flex-basis: 32%
+		margin: 5px
+
+.openForm
+	padding: 20px 10px
+	width: 500px
+	max-width: 100%
+	margin: 0 auto
+	position: relative
+	background: $main_white	
+	text-align: center
+	h2
+		font-size: 40px
+		color: $main_color
+		span
+			color: $main_rgb
+	input
+		padding: 10px
+		width: 100%
+		margin-bottom: 10px
+	.mainBtn
+		margin-left: auto
+		margin-right: auto
+/* --- forms end ------------------------------------------------*/

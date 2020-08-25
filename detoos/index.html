@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+	<meta name="description" CONTENT="<?php bloginfo('description');?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<?php bloginfo('name'); ?><?php wp_title(); ?>" />
+  <meta property="og:description" content="<?php bloginfo('description');?>" />
+  <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.png">
+  <meta property="og:url" content="<?php site_url(); ?>" />
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo(template_url);?>/img/logo.png" />
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+<!-- menuBtn start -->
+<div class="menuBtn menuBtnHide" id="menuBtn">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+<!-- menuBtn end -->
+
+<!-- navMobile start -->
+<nav class="navMobile navMobileHide" id="navMobile">
+	<div class="navMobile__title">
+		<h4><span>de</span>Toos</h4>
+		<h5>Меню</h5>
+	</div>
+	<!-- /.navMobile__title -->
+	<div class="navMobile__list mb-auto">
+		<ul>
+			<li><a href="#about-link" rel="m_PageScroll2id">Что такое DeToos</a></li>
+			<li><a href="#adv-link" rel="m_PageScroll2id">Преимущества</a></li>
+			<li><a href="#part-link" rel="m_PageScroll2id">Партнерство</a></li>
+			<li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
+			<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li>
+		</ul>
+		<div class="navMobile__list-social">
+			<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+		<!-- /.navMobile__list-social -->	
+		<div class="navMobile__list-delivery">
+			<h5><img src="img/newmail.png" alt="Доставка Новой Почтой"> Доставка Новой Почтой</h5>
+			<h5><img src="img/guarant.png" alt="Доставка Новой Почтой"> 5 лет гарантии</h5>
+		</div>
+		<!-- /.navMobile__list-delivery -->
+	</div>
+	<!-- /.navMobile__list -->
+	<div class="navMobile__contacts">
+		<a href="tel:+380503107944" class="mb-2">+38 (050) 310 79 44</a>
+		<a href="#mpopup-form" class="mpopup">Заказать звонок</a>
+	</div>
+	<!-- /.navMobile__contacts -->
+</nav>
+<!-- navMobile end -->
+
+
+<!-- firstScroll start -->
+<section class="firstScroll">
+	<div class="firstScroll__left">
+		<div class="firstScroll__left-bgLogo">
+			<img src="img/bglogo.png" alt="deToos" class="d-none d-lg-inline">
+		</div>
+		<!-- /.firstScroll__left-bglogo -->
+		<div class="firstScroll__left-wrap">
+			<div class="firstScroll__left-wrap-imgD">
+				<img src="img/fdeToos.png" alt="">
+			</div>
+			<!-- /.firstScroll__left-wrap-imgD -->
+			<div class="firstScroll__left-wrap-nav">
+				<div class="firstScroll__left-wrap-nav-header">
+					<div class="firstScroll__left-wrap-nav-header-logo">
+						<img src="img/logo.png" alt="deToos">
+					</div>
+					<!-- /.firstScroll__left-wrap-nav-header-logo -->
+					<div class="firstScroll__left-wrap-nav-header-phone">
+						<a href="tel:+380503107944">+38 (050) 310 79 44</a>
+						<a href="#mpopup-form" class="mpopup">Заказать звонок</a>
+					</div>
+					<!-- /.firstScroll__left-wrap-nav-header-phone -->
+				</div>
+				<!-- /.firstScroll__left-wrap-nav-header -->
+
+				<div class="firstScroll__left-wrap-nav-line"></div>
+				<!-- /.firstScroll__left-wrap-nav-line -->
+				<div class="firstScroll__left-wrap-nav-list">
+					<ul>
+						<li><a href="#about-link" rel="m_PageScroll2id">Что такое DeToos</a></li>
+						<li><a href="#adv-link" rel="m_PageScroll2id">Преимущества</a></li>
+						<li><a href="#part-link" rel="m_PageScroll2id">Партнерство</a></li>
+						<li><a href="#rev-link" rel="m_PageScroll2id">Отзывы</a></li>
+						<li><a href="#cont-link" rel="m_PageScroll2id">Контакты</a></li>
+					</ul>
+				</div>
+				<!-- /.firstScroll__left-wrap-nav-list -->
+			</div>
+			<!-- /.firstScroll__left-wrap-nav -->
+			<div class="firstScroll__left-wrap-imgMobile">
+				<img src="img/bgLogom.png" alt="deToos" >
+			</div>
+			<!-- /.firstScroll__left-wrap-nav-img -->
+			<div class="firstScroll__left-wrap-title">
+				<div class="firstScroll__left-wrap-title-header">
+					<h2>Пневмо-пылесос<br>европейского<br class="d-lg-none">производства</h2>
+					<h1>DeTOOS No1</h1>
+					<h3>Инновационное решение как метод борьбы<br>с аллергенами в Вашем доме</h3>
+				</div>
+				<!-- /.firstScroll__left-wrap-title-header -->
+				<div class="firstScroll__left-wrap-title-btn">
+					<div class="firstScroll__left-wrap-title-btn-wrap">
+						<a href="#mpopup-form" class="mpopup mainBtn">Заказать</a>
+					</div>
+					<!-- /.firstScroll__left-wrap-title-btn-wrap -->
+					<div class="firstScroll__left-wrap-title-btn-txt">
+						<p>Закажите бесплатную<br>консультацию специалиста<br class="d-none d-lg-inline">и получите тест драйв Detoos</p>
+					</div>
+					<!-- /.firstScroll__left-wrap-title-btn-txt -->
+				</div>
+				<!-- /.firstScroll__left-wrap-title-btn -->
+				<div class="firstScroll__left-wrap-title-line"></div>
+				<!-- /.firstScroll__left-wrap-title-line -->
+				<div class="firstScroll__left-wrap-title-delivery">
+					<h5><img src="img/newmail.png" alt="Доставка Новой Почтой"> Доставка Новой Почтой</h5>
+					<h5><img src="img/guarant.png" alt="Доставка Новой Почтой"> 5 лет гарантии</h5>
+				</div>
+				<!-- /.firstScroll__left-wrap-title-delivery -->
+			</div>
+			<!-- /.firstScroll__left-wrap-title -->
+		</div>
+		<!-- /.firstScroll__left-wrap -->
+	</div>
+	<!-- /.firstScroll__left -->
+	<div class="firstScroll__right">
+		
+	</div>
+	<!-- /.firstScroll__left -->
+</section>
+<!-- firstScroll end -->
+
+<!-- about start -->
+<section class="about" id="about-link">
+	<div class="container-fluid p-0 m-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-6 p-0 m-0">
+				<div class="about__imgWrap">
+					<div class="about__imgWrap-line"></div>
+					<!-- /.about__imgWrap-line -->
+					<div class="about__imgWrap-img">
+						<img src="img/about.png" alt="about">
+						<a href="https://www.youtube.com/watch?v=Eoi-pU5jY_o" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+					</div>
+					<!-- /.about__imgWrap-img -->
+				</div>
+				<!-- /.about_imgWrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6 p-0 m-0">
+				<div class="about__txt">
+					<h3>Что такое  <span>De</span>TOOS и почему он незаменим дома?</h3>
+					<hr>
+					<p>Делая уборку в доме, вы добиваетесь чистоты. Но к сожалению самый 
+						мощный пылесос не может гарантировать высокую степень очистки. 
+						Самые мелкие частицы задержатся в мусорном мешке пылесоса, но 
+						бактерии, аллергены, микробы с потоком воздуха выйдут из пылесоса и 
+						остануться в квартире, и мало того воздух который выходит струйным 
+						потоком через фильтр подымает пыль с не убраной зоны и 
+						распространяет всю инфекцию, все микробы и бактерии по квартире. 
+						Этому свидетельствует запах во время уборки и после.</p>
+						<p>Инновационная технология deToos разработана по европейским стандартам решает эту проблему!</p>
+				</div>
+				<!-- /.about__txt -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- about end -->
+
+
+<!-- revolution start -->
+<section class="revolution">
+	<div class="container-fluid p-0 m-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-6 align-self-center">
+				<div class="revolution__desc">
+					<h2>DeTOOS - Революционный подход к уборке дома</h2>
+					<div class="revolution__desc-line"></div>
+					<!-- /.revolution__desc-line -->
+					<p>Инновационный мобильный пылесос deToos
+						который очищает ваш дом от грязи и аллергенов, выводя отработанный воздух с микропылью и запахами на улицу, а не обратно в помещение.</p>
+						<p>Уникальная технология подключения пылесоса к пневмотранспорт-розетке и длинный и гибкий шланг с легкостью пройдет между любой мебелью.</p>
+				</div>
+				<!-- /.revolution__desc -->
+				<div class="revolution__btn">
+					<div class="revolution__btn-wrap">
+						<a href="#mpopup-form" class="mpopup mainBtn">Заказать</a>
+					</div>
+					<!-- /.revolution__btn-wrap -->
+					<div class="revolution__btn-txt">
+						<p>Закажите  DeToos прямо сейчас и получите <span>бесплатную</span> консультацию специалиста</p>
+					</div>
+					<!-- /.revolution__btn-txt -->
+				</div>
+				<!-- /.revolution__btn -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="revolution__slider">
+					<div class="revolution__slider-wrap">
+						<img src="img/rev01.png" alt="deToos">
+					</div>
+					<!-- /.revolution__slider-wrap -->
+					<div class="revolution__slider-wrap">
+						<img src="img/rev01.png" alt="deToos">
+					</div>
+					<!-- /.revolution__slider-wrap -->
+					<div class="revolution__slider-wrap">
+						<img src="img/rev01.png" alt="deToos">
+					</div>
+					<!-- /.revolution__slider-wrap -->
+					<div class="revolution__slider-wrap">
+						<img src="img/rev01.png" alt="deToos">
+					</div>
+					<!-- /.revolution__slider-wrap -->
+				</div>
+				<!-- /.revolution__slider -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- revolution end -->
+
+
+<!-- adv start -->
+<section class="adv" id="adv-link">
+	<div class="adv__header">
+		<h2>Преимущества пылесоса DeTOOS<br class="d-none d-lg-inline"> в сравнении с обычным пылесосом</h2>
+		<h3>Если не убирать пыль, грязь, и мусор с пола, то в нем развивается грибок (плесень), микробы, бактерии и с циркуляцией<br class="d-none d-lg-inline"> воздуха это подымается выше, чем в итоге мы дышем. Все это вызывает аллергию, и другие заболевания дыхательных органов</h3>
+	</div>
+	<!-- /.adv__header -->
+	<div class="adv__line"></div>
+	<!-- /.adv__line -->
+	<div class="container-fluid m-0 p-0">
+		<div class="row m-0 p-0">
+			<div class="col-6 mb-5">
+				<div class="adv__wrap adv__old">
+					<div class="adv__wrap-cont">
+						<div class="adv__wrap-cont-img">
+							<img src="img/aOld.png" alt="">
+						</div>
+						<!-- /.adv__wrap-cont-img -->
+						<div class="adv__wrap-cont-txt">
+							<p>Обычный пылесос</p>
+						</div>
+						<!-- /.adv__wrap-cont-txt -->
+					</div>
+				</div>
+				<!-- /.adv__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-6 mb-5">
+				<div class="adv__wrap adv__new">
+					<div class="adv__wrap-cont">
+						<div class="adv__wrap-cont-img">
+							<img src="img/aNew.png" alt="">
+						</div>
+						<!-- /.adv__wrap-cont-img -->
+						<div class="adv__wrap-cont-txt">
+							<p>Пневмопылесос DeToos</p>
+						</div>
+						<!-- /.adv__wrap-cont-txt -->
+					</div>
+				</div>
+				<!-- /.adv__wrap -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a01.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Система циркуляции воздуха в циклонном
+							пылесосе</h4>
+							<p>Во время уборки  воздух выходит струйным потоком через фильтр и подымает пыль с неубранной зоны и распространяет все инфекции, микробы и бактерии по квартире. Этому свидетельствует запах во время уборки и после.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a02.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Система циркуляции воздуха в пылесосе DeToos</h4>
+							<p>Во время уборки весь воздух будет выходить на улицу, таким образом очищать воздух в помещение от грибков, микропыли, плесени и аллергенов.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a03.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Технология подключение циклонного пылесоса</h4>
+							<p>Циклонный пылесос подключается к обычной розетке, таким образом вы имеет ограничение на покрываемую площадь из-за шнура пылесоса. Каждый раз как нужно будет убирать другую комнату вы должны носить за собой пылесос.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a04.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Система циркуляции воздуха в пылесосе DeToos</h4>
+							<p>Во время уборки весь воздух будет выходить на улицу, таким образом очищать воздух в помещение от грибков, микропыли, плесени и аллергенов.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a05.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Мотор циклонного пылесоса</h4>
+							<p>Обычные пылесосы оснащены прямоточным мотором, который охлаждается тем же воздухом, которым всасывается пыль. Чем больше пыли собирается, тем хуже охлаждается мотор. Чем больше греется мотор – тем меньше сила мотора, меньше срок службы мотора.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+			<div class="col-sm-6 mb-4">
+				<div class="adv__dCont">
+					<div class="adv__dCont-img">
+						<img src="img/a06.png" alt="deToos">
+					</div>
+					<!-- /.adv__dCont-img -->
+					<div class="adv__dCont-txt">
+						<h4>Мотор пылесоса deToos</h4>
+							<p> By-pass - это мотор который обладает системой охлаждения чистым воздухом, поэтому может часами работать без перерыва и с постоянной силой всасывания. Пылесос deToos с профессиональным by-pass мотором будет безукоризненно служить десятилетия.</p>
+					</div>
+					<!-- /.adv__dCont-txt -->
+				</div>
+				<!-- /.adv__dCont -->
+			</div>
+			<!-- /.col-lg-6 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+</section>
+<!-- adv end -->
+
+<!-- partner start -->
+<section class="partner" id="part-link">
+	<div class="partner__desc">
+		<div class="partner__desc-title">
+			<h2>Развиваем диллерскую сеть по всей Украине</h2>
+			<p>В настоящий момент мы активно развиваем дилерскую сеть и предлагаем выгодные условия сотрудничества. Наша компания заинтересована в развитии дилерской сети не только в Киеве,  но и в других областях Украины.</p>
+		</div>
+		<!-- /.partner__desc-title -->
+		<div class="partner__desc-line"></div>
+		<!-- /.partner__desc-line -->
+		<div class="partner__desc-btn">
+			<div class="partner__desc-btn-wrap">
+				<a href="#mpopup-form" class="mpopup mainBtn">Подробнее</a>
+			</div>
+			<!-- /.partner__btn-wrap -->
+			<div class="partner__desc-btn-txt">
+				<p>Если Вы ведете активный бизнес, 
+					значит эта информация для Вас</p>
+			</div>
+			<!-- /.partner__btn-txt -->			
+		</div>
+		<!-- /.partner__desc-btn -->
+	</div>
+	<!-- /.partner__desc -->
+	<div class="partner__img">
+		<img src="img/part.png" alt="Развиваем диллерскую
+		сеть по всей Украине">
+	</div>
+	<!-- /.partner__img -->
+</section>
+<!-- partner end -->
+
+<!-- openForm start -->
+<section class="formSection">
+	<form class="order-main openFormVer">
+		<h3>Заполните форму ниже и получите <span>бесплатную</span> <br class="d-none d-lg-inline">консультацию специалиста прямо сейчас </h3>
+		<input type="text" name="name" placeholder="Имя" required>
+		<input type="tel" class="phoneidcl" name="phone" placeholder="Телефон" required>
+		<button class="disbutt mainBtn" disabled><span>Получить предложение</span></button>
+		<input name="order" type="hidden" value="Заполните форму ниже и получите бесплатную
+		консультацию специалиста прямо сейчас">
+		<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+		<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+		<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+		<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+		<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+	</form>
+</section>
+<!-- openForm end -->
+
+<!-- rev start -->
+<section class="rev" id="rev-link">
+	<div class="rev__bg"></div>
+	<!-- /.rev__bg -->
+	<div class="rev__title">
+		<h2>Видео отзывы владельцев центрального пневмопылесоса DeToos</h2>
+	</div>
+	<!-- /.rev__title -->
+	<div class="rev__line"></div>
+	<!-- /.rev__line -->
+	<div class="rev__slider">
+		<div class="rev__slider-cont">
+			<div class="rev__slider-cont-img">
+				<div class="rev__slider-cont-img-wrap">
+					<img src="img/reviews01.png" alt="Игорь">
+				</div>
+				<!-- /.rev__slider-cont-img-wrap -->
+				<div class="rev__slider-cont-img-placeholder">
+					<h4>Игорь<br>
+					Гайдай</h4>
+					<p>Фотохудожник</p>
+				</div>
+				<!-- /.rev__slider-cont-img-placeholder -->
+				<a href="https://www.youtube.com/watch?v=Eoi-pU5jY_o" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+			</div>
+			<!-- /.rev__slider-cont-img -->
+			<div class="rev__slider-cont-desc">
+				<div class="rev__slider-cont-desc-title">
+					<div class="rev__slider-cont-desc-title-img">
+						<img src="img/reviewsS01.png" alt="Игорь">
+					</div>
+					<!-- /.rev__slider-cont-desc-title-img -->
+					<div class="rev__slider-cont-desc-title-header">
+						<h3>Игорь Гайдай</h3>
+						<p>Фотохудожник</p>
+					</div>
+					<!-- /.rev__slider-cont-desc-title-desc -->
+				</div>
+				<!-- /.rev__slider-cont-desc-title -->
+				<div class="rev__slider-cont-desc-txt">
+					<p>15 месяцев я использовал пылесос deToos. Я понял, как это круто, что мне не нужно таскать его с собой. И вообще его не нужно ниокуда доставать, он уже находится на месте...</p>
+				</div>
+				<!-- /.rev__slider-cont-desc-txt -->
+			</div>
+			<!-- /.rev__slider-cont-desc -->
+		</div>
+		<!-- /.rev__slider-cont -->
+		<div class="rev__slider-cont">
+			<div class="rev__slider-cont-img">
+				<div class="rev__slider-cont-img-wrap">
+					<img src="img/reviews01.png" alt="Игорь">
+				</div>
+				<!-- /.rev__slider-cont-img-wrap -->
+				<div class="rev__slider-cont-img-placeholder">
+					<h4>Игорь<br>
+					Гайдай</h4>
+					<p>Фотохудожник</p>
+				</div>
+				<!-- /.rev__slider-cont-img-placeholder -->
+				<a href="https://www.youtube.com/watch?v=Eoi-pU5jY_o" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+			</div>
+			<!-- /.rev__slider-cont-img -->
+			<div class="rev__slider-cont-desc">
+				<div class="rev__slider-cont-desc-title">
+					<div class="rev__slider-cont-desc-title-img">
+						<img src="img/reviewsS01.png" alt="Игорь">
+					</div>
+					<!-- /.rev__slider-cont-desc-title-img -->
+					<div class="rev__slider-cont-desc-title-header">
+						<h3>Игорь Гайдай</h3>
+						<p>Фотохудожник</p>
+					</div>
+					<!-- /.rev__slider-cont-desc-title-desc -->
+				</div>
+				<!-- /.rev__slider-cont-desc-title -->
+				<div class="rev__slider-cont-desc-txt">
+					<p>15 месяцев я использовал пылесос deToos. Я понял, как это круто, что мне не нужно таскать его с собой. И вообще его не нужно ниокуда доставать, он уже находится на месте...</p>
+				</div>
+				<!-- /.rev__slider-cont-desc-txt -->
+			</div>
+			<!-- /.rev__slider-cont-desc -->
+		</div>
+		<!-- /.rev__slider-cont -->
+		<div class="rev__slider-cont">
+			<div class="rev__slider-cont-img">
+				<div class="rev__slider-cont-img-wrap">
+					<img src="img/reviews01.png" alt="Игорь">
+				</div>
+				<!-- /.rev__slider-cont-img-wrap -->
+				<div class="rev__slider-cont-img-placeholder">
+					<h4>Игорь<br>
+					Гайдай</h4>
+					<p>фотохудожник</p>
+				</div>
+				<!-- /.rev__slider-cont-img-placeholder -->
+				<a href="https://www.youtube.com/watch?v=Eoi-pU5jY_o" class="popup-youtube"><i class="fab fa-youtube"></i></a>
+			</div>
+			<!-- /.rev__slider-cont-img -->
+			<div class="rev__slider-cont-desc">
+				<div class="rev__slider-cont-desc-title">
+					<div class="rev__slider-cont-desc-title-img">
+						<img src="img/reviewsS01.png" alt="Игорь">
+					</div>
+					<!-- /.rev__slider-cont-desc-title-img -->
+					<div class="rev__slider-cont-desc-title-header">
+						<h3>Игорь Гайдай</h3>
+						<p>Фотохудожник</p>
+					</div>
+					<!-- /.rev__slider-cont-desc-title-desc -->
+				</div>
+				<!-- /.rev__slider-cont-desc-title -->
+				<div class="rev__slider-cont-desc-txt">
+					<p>15 месяцев я использовал пылесос deToos. Я понял, как это круто, что мне не нужно таскать его с собой. И вообще его не нужно ниокуда доставать, он уже находится на месте...</p>
+				</div>
+				<!-- /.rev__slider-cont-desc-txt -->
+			</div>
+			<!-- /.rev__slider-cont-desc -->
+		</div>
+		<!-- /.rev__slider-cont -->
+	</div>
+</section>
+<!-- rev end -->
+
+<!-- contacts start -->
+<section class="contacts" id="cont-link">
+	<div class="contacts__desc">
+		<div class="contacts__desc-txt">
+			<h2>Контакты</h2>
+			<a><i class="fas fa-map-marker-alt"></i> Украина г. Киев, 02132 ул. 56-я Садовая, д.47</a>
+			<a href="tel:+380989306683"><i class="fas fa-phone"></i> +38 (098) 930-66-83</a>
+			<a href="mailto:o.muller@detoos.com"><i class="far fa-envelope"></i> o.muller@detoos.com</a>
+			<div class="contacts__desc-txt-social">
+				<a href="#" target="_blank" class="mr-4"><i class="fab fa-facebook-square"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+			<!-- /.contacts__desc-txt-social -->
+		</div>
+		<!-- /.contacts__desc-txt -->
+		<div class="contacts__desc-btn">
+			<h3>Остались вопросы?<br> 
+				Наш менеджер с радостью 
+				ответит вам на них</h3>
+				<a href="#mpopup-form" class="mpopup mainBtn">Получить предложение</a>
+		</div>
+		<!-- /.contacts__desc-btn -->
+	</div>
+	<!-- /.contacts__desc -->
+	<div class="contacts__map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162758.47733063815!2d30.3926100494413!3d50.40195139807814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1584634993728!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	<!-- /.contacts__map -->
+</section>
+<!-- contacts end -->
+
+<div class="devgen p-1 text-center">
+	<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>
+</div>
+
+<div class="hidden">
+	<form class="openForm d-block mx-auto order-main" id="mpopup-form">
+			<h2><span>de</span>Toos</h2>
+			<h3>Заполните форму</h3>
+			<h4><span id="customTextForm">Мы перезвоним</span></h4>
+			<input type="text" name="name" placeholder="ИМЯ" required>
+			<input type="tel" class="phoneidcl" name="phone" placeholder="ТЕЛЕФОН" required>
+			<button class="disbutt mainBtn" disabled><span>отправить</span></button>
+			<input name="order" type="hidden" id="input_order">
+			<input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+			<input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+			<input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+			<input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+		</form>
+</div>
+
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="libs/jquery.inputmask.bundle.min.js"></script>
+<script src="libs/psti/jquery.malihu.PageScroll2id.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/fontawesome/js/all.min.js"></script>
+<script src="js/plug.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
